@@ -13,5 +13,5 @@ class ThingForm(forms.ModelForm):
         'description': forms.Textarea(attrs={'maxlength': 120}),
     }
 
-    description = forms.CharField(widget=forms.Textarea)
+    description = forms.CharField(widget=widgets['description'])
     quantity = forms.IntegerField(widget=forms.NumberInput)
